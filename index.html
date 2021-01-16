@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Library</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="heading">
+            <h2>Online Library</h2>
+        </div>
+        <div id="addbook">
+            <button id="button_open" class="example_a">Add Book</button>
+        </div>
+        <div id="books">
+            <table id ="table1">
+                <tr>
+                    <th colspan="4">Want to Read</th>
+                </tr>
+            </table>
+            <table id = "table2">
+                <tr>
+                    <th colspan="4">Reading</th>
+                </tr>
+            </table>
+            <table id="table3">
+                <tr>
+                    <th colspan="4">Read</th>
+                </tr>
+            </table>
+
+        </div>
+        <div id="modal_container" class="modal_container">
+            <button id="x_close">X</button>
+            <h1>Add Book</h1>
+            <form action="javascript:modal_submit()" id="form">
+                
+                <label for="title">Book Title:</label><br>
+                <input type="text" id="title" name="title" required="required"><br>
+
+                <label for="author">Book's Author:</label><br>
+                <input type="text" id="author" name="author" required="required"><br>
+
+                <label for="pages">Number of Pages:</label><br>
+                <input type="number" id="pages" name="pages" required="required"><br>
+
+                <div class="radio">
+                    <input type="radio" id="want_to_read" name="checkbox" required>
+                    <label for="want_to_read">Want to Read</label><br>
+                    
+                    <input type="radio" id="reading" name="checkbox">
+                    <label for="reading">Reading</label><br>
+                    
+                    <input type="radio" id="read" name="checkbox">
+                    <label for="read">Read</label><br>
+                </div>
+                <input type="submit" id="button_close" class="example_a" value="Add">
+            </form>
+        </div>
+        <script src="books.js"></script>
+    </body>
+</html>
